@@ -6,6 +6,26 @@ html
     link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-main", aria-expanded="false")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="/") Loc8r
+
+            #navbar-main.navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li: a(href='/about/') About
+
+    .container
+        block content
+
+        footer
+            .row
+                .col-xs-12
+                    small &copy; Simon Holmes 2014
     script(src='/javascripts/jquery-1.12.0.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
