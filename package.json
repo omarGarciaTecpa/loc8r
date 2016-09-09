@@ -19,6 +19,7 @@
     "morgan": "~1.7.0",
     "readline": "0.0.x",
     "request": "^2.74.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "uglify-js": "^2.7.3"
   }
 }
